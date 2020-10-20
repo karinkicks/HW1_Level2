@@ -1,22 +1,27 @@
-public class Human implements Action{
+public class Human implements Character {
     private String name;
     private int limit;
     private boolean success;
-
+    @Override
     public String getName() {
         return name;
     }
-
+    @Override
     public int getLimit() {
         return limit;
     }
-
+    @Override
     public boolean isSuccess() {
         return success;
     }
-
+    @Override
     public void setSuccess(boolean success) {
         this.success = success;
+    }
+
+    @Override
+    public void passing_check(boolean isSuccess) {
+
     }
 
     public Human(String name, int limit){

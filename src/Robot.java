@@ -1,20 +1,20 @@
-public class Robot implements Action{
+public class Robot implements Character {
     private String name;
     private int limit;
     private boolean success;
-
+    @Override
     public int getLimit() {
         return limit;
     }
-
+    @Override
     public boolean isSuccess() {
         return success;
     }
-
+    @Override
     public String getName() {
         return name;
     }
-
+    @Override
     public void setSuccess(boolean success) {
         this.success = success;
     }
